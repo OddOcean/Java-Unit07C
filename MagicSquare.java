@@ -1,12 +1,11 @@
-class MagicSquare
-{
-	private int size;
-	private int magic[][];
+class MagicSquare{
+  private int size;
+  private int magic[][];
 
-	public MagicSquare(int s){
+  public MagicSquare(int s){
 		size = s;
 		magic = new int[size][size];
-	}
+  }
 
   public int resetX(int x){
     if (x >= size){
@@ -26,7 +25,7 @@ class MagicSquare
     return y;
   }
 
-	public void computeMagicSquare(){
+  public void computeMagicSquare(){
     for (int y = 0; y < size; y++){
       for (int x = 0; x < size; x++){
         magic[y][x] = 0;
@@ -47,9 +46,9 @@ class MagicSquare
       x = resetX(x);
       y = resetY(y);
     }
-	}
+  }
 
-	public void displayMagicSquare(){
+  public void displayMagicSquare(){
 		System.out.println();
 		System.out.println(size + "x" + size + " Magic Square");
 		System.out.println("==================");
@@ -62,9 +61,9 @@ class MagicSquare
       System.out.println(line);
       line = "";
     }
-	}
+  }
 
-	public void checkRows(){
+  public void checkRows(){
 		System.out.println();
 		System.out.println("Checking Rows");
 		System.out.println("=============");
@@ -82,9 +81,9 @@ class MagicSquare
       sum = 0;
       line = "";
     }
-	}
+  }
 
-	public void checkColumns(){
+  public void checkColumns(){
 		System.out.println();
 		System.out.println("Checking Columns");
 		System.out.println("================");
@@ -102,10 +101,9 @@ class MagicSquare
       sum = 0;
       line = "";
     }
-   }
+  }
 
-	public void checkDiagonals()
-	{
+  public void checkDiagonals(){
 		System.out.println();
 		System.out.println("Checking Diagonals");
 		System.out.println("==================");
@@ -128,6 +126,5 @@ class MagicSquare
     sum += magic[size - 1][0];
     line += magic[size - 1][0];
     System.out.println(line + " = " + sum);
-	}
-   
+  }
 }
