@@ -3,8 +3,8 @@ class MagicSquare{
   private int magic[][];
 
   public MagicSquare(int s){
-		size = s;
-		magic = new int[size][size];
+    size = s;
+    magic = new int[size][size];
   }
 
   public int resetX(int x){
@@ -61,7 +61,7 @@ class MagicSquare{
       System.out.println(line);
       line = "";
     }
-  }
+	}
 
   public void checkRows(){
 		System.out.println();
@@ -101,7 +101,7 @@ class MagicSquare{
       sum = 0;
       line = "";
     }
-  }
+   }
 
   public void checkDiagonals(){
 		System.out.println();
