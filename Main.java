@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-class Main {
-  public static void main(String[] args) {
+class Main{
+  public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
     int size = enterData(input, "Enter the odd# size of the Magic Square  ===>>  ");
@@ -34,5 +34,4 @@ class Main {
     }
     return num;
   }
-  
 }
